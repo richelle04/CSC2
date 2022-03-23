@@ -8,8 +8,8 @@ root = Tk() # top level window
 label = Label(root, text="Hello Pyhton") # what you on screen
 
 # font colour, config is for properties
-label.config(text="Hello Python", fg="red")
-label.config(bg="yellow") # background colour
+label.config(text="Hello Python", fg="black")
+label.config(bg="brown") # background colour
 label.config(font="Times 20")
 
 label.config(text="Python is a great program and we can do lots with it")
