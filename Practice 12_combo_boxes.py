@@ -18,8 +18,8 @@ def callback(): # callback function
 # create entry boxes
 entry = ttk.Entry(root, width=30) # size of the field for entry
 entry2 = ttk.Entry(root,width=30)
-entry.insert(0, 'Please enter you name') # 0 is the index - first character
-entry2.insert(0, 'Please enter you password')
+entry.insert(0, '') # 0 is the index - first character
+entry2.insert(0, '')
 
 # add a button to the window
 button=ttk.Button(root,text='Enter') # the difference in this exercise is that we are configuring our button with the callback function
