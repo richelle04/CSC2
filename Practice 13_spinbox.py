@@ -14,6 +14,7 @@ def callback(): # callback function
         # this is where to get our gender value to show when we run the program
         print('Gender is:' +gender.get())
         print(months.get())
+        print(year.get())
 
 # Create entry boxes
 entry = ttk.Entry(root, width=30) # size of the field for entry
@@ -69,10 +70,10 @@ ComboBox = ttk.Combobox(root, textvariable=months, values=('Jan', 'Feb', 'Mar', 
 
 # Create spinbox - 'from' is a special keyword for Python - so we need to use _ after it
 year = StringVar()
-Spinbox(root,from_=1990, to=2022, textvariable=year).grid(row=6, column=1)
+# Spinbox(root,from_=1990, to=2022, textvariable=year).grid(row=6, column=1)
 # Information below:
 # Use grid geometry Manager to our window but we are unable to edit the values in the spinbox
-# Spinbox (root, from_=1990, to=2022, textvariable=year, state='readonly').grid(row=6, column=0)
+Spinbox (root, from_=1990, to=2022, textvariable=year, state='readonly').grid(row=6, column=1)
 # To get the value to print out when program is run, add a print statement in function 
 # print(year,get())
 
